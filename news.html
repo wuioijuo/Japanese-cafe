@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Новости — Japanese</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">ГЛАВНАЯ</a>
+
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="news.html">Новости</a>
+      <a href="catalog.html">Меню</a>
+      <a href="booking.html">Заказ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="inner-page">
+    <section class="page-title">
+      <h1>NEWS</h1>
+      <p>最新ニュース</p>
+    </section>
+
+    <section class="news-grid">
+      <article class="news-card" 
+      data-title="Новое сезонное меню" 
+      data-text="Мы добавили новые роллы с лососем, угрём, авокадо и сливочным соусом. Сезонное меню доступно каждый день с 11:00 до 22:00.">
+        <img src="pictures/news1.png" alt="">
+        <h2>Новое сезонное меню</h2>
+        <p>Свежие роллы и новые сочетания вкусов.</p>
+        <button>Читать полностью</button>
+      </article>
+
+      <article class="news-card" 
+      data-title="Скидка на первый заказ" 
+      data-text="Для новых гостей действует скидка 15% на первый заказ. Просто оформите заказ на сайте и укажите промокод SUSHI15.">
+        <img src="pictures/news2.png" alt="">
+        <h2>Скидка на первый заказ</h2>
+        <p>Получите приятный бонус при первом заказе.</p>
+        <button>Читать полностью</button>
+      </article>
+
+      <article class="news-card" 
+      data-title="Обновление доставки" 
+      data-text="Мы улучшили доставку: теперь среднее время доставки по городу составляет от 35 до 50 минут в зависимости от района.">
+        <img src="pictures/news3.png" alt="">
+        <h2>Обновление доставки</h2>
+        <p>Быстрее, удобнее и аккуратнее.</p>
+        <button>Читать полностью</button>
+      </article>
+
+      <article class="news-card" 
+      data-title="Сет для двоих" 
+      data-text="В меню появился новый набор для двоих: роллы, нигири, соус унаги, имбирь и васаби. Отличный выбор для уютного вечера.">
+        <img src="pictures/news4.png" alt="">
+        <h2>Сет для двоих</h2>
+        <p>Большой набор для ужина или встречи.</p>
+        <button>Читать полностью</button>
+      </article>
+
+      <article class="news-card" 
+      data-title="Японский вечер" 
+      data-text="Каждую пятницу в ресторане проходит тематический японский вечер с особой подачей блюд и спокойной атмосферной музыкой.">
+        <img src="pictures/news5.png" alt="">
+        <h2>Японский вечер</h2>
+        <p>Атмосфера Японии каждую пятницу.</p>
+        <button>Читать полностью</button>
+      </article>
+
+      <article class="news-card" 
+      data-title="Новинки с креветкой" 
+      data-text="Мы добавили несколько блюд с креветкой: темпура ролл, эби нигири и авторский спайси ролл с нежным соусом.">
+        <img src="pictures/news6.png" alt="">
+        <h2>Новинки с креветкой</h2>
+        <p>Нежные блюда с морским вкусом.</p>
+        <button>Читать полностью</button>
+      </article>
+    </section>
+  </main>
+
+  <div class="modal" id="news-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">×</button>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img src="pictures/footer.png" alt="" class="footer-wave">
+
+    <div class="footer-content">
+      <h2>Japanese</h2>
+      <p>Fresh sushi · Japanese taste · Warm atmosphere</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

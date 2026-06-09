@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Меню — Japanese</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">ГЛАВНАЯ</a>
+
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="news.html">Новости</a>
+      <a href="catalog.html">Меню</a>
+      <a href="booking.html">Заказ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="inner-page">
+    <section class="page-title">
+      <h1>CATALOG</h1>
+      <p>カードメニュー</p>
+    </section>
+
+    <section class="catalog-flex">
+    <article class="catalog-card menu-product"
+        data-name="Salmon Avocado Roll"
+        data-jp="サーモンアボカドロール"
+        data-desc="Ролл со свежим лососем, авокадо, рисом и нори. Нежный вкус с мягкой текстурой."
+        data-weight="260 г"
+        data-calories="410 ккал"
+        data-price="520 ₽"
+        data-image="pictures/sushi7.png">
+        <img src="pictures/sushi7.png" alt="">
+        <h2>Salmon Avocado Roll</h2>
+        <p>Лосось, авокадо, рис, нори</p>
+        <span class="price">520 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Tempura Roll"
+        data-jp="天ぷらロール"
+        data-desc="Хрустящий ролл с креветкой темпура, рисом, нори и фирменным соусом."
+        data-weight="280 г"
+        data-calories="470 ккал"
+        data-price="560 ₽"
+        data-image="pictures/sushi6.png">
+        <img src="pictures/sushi6.png" alt="">
+        <h2>Tempura Roll</h2>
+        <p>Хрустящий ролл, креветка, соус</p>
+        <span class="price">560 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Unagi Nigiri"
+        data-jp="うなぎ握り"
+        data-desc="Нигири с копчёным угрём, соусом унаги и кунжутом."
+        data-weight="150 г"
+        data-calories="310 ккал"
+        data-price="490 ₽"
+        data-image="pictures/sushi5.png">
+        <img src="pictures/sushi5.png" alt="">
+        <h2>Unagi Nigiri</h2>
+        <p>Угорь, соус унаги, кунжут</p>
+        <span class="price">490 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Tuna Nigiri"
+        data-jp="まぐろ握り"
+        data-desc="Классические нигири с нежным тунцом и рисом."
+        data-weight="140 г"
+        data-calories="250 ккал"
+        data-price="450 ₽"
+        data-image="pictures/sushi13.png">
+        <img src="pictures/sushi13.png" alt="">
+        <h2>Tuna Nigiri</h2>
+        <p>Нежный тунец на рисе</p>
+        <span class="price">450 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Salmon Nigiri"
+        data-jp="サーモン握り"
+        data-desc="Нигири со свежим лососем, рисом и лёгкой ноткой васаби."
+        data-weight="150 г"
+        data-calories="280 ккал"
+        data-price="430 ₽"
+        data-image="pictures/sushi12.png">
+        <img src="pictures/sushi12.png" alt="">
+        <h2>Salmon Nigiri</h2>
+        <p>Свежий лосось, рис, васаби</p>
+        <span class="price">430 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Baked Salmon Roll"
+        data-jp="焼きサーモンロール"
+        data-desc="Запечённый ролл с лососем, сливочным соусом и нежной сырной шапочкой."
+        data-weight="300 г"
+        data-calories="520 ккал"
+        data-price="590 ₽"
+        data-image="pictures/sushi11.png">
+        <img src="pictures/sushi11.png" alt="">
+        <h2>Baked Salmon Roll</h2>
+        <p>Лосось, сливочный соус</p>
+        <span class="price">590 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Ebi Nigiri"
+        data-jp="海老握り"
+        data-desc="Нигири с креветкой, рисом и лёгким японским гарниром."
+        data-weight="145 г"
+        data-calories="240 ккал"
+        data-price="420 ₽"
+        data-image="pictures/sushi9.png">
+        <img src="pictures/sushi9.png" alt="">
+        <h2>Ebi Nigiri</h2>
+        <p>Креветка, рис, гарнир</p>
+        <span class="price">420 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Scallop Nigiri"
+        data-jp="帆立握り"
+        data-desc="Нежные нигири с морским гребешком и мягким рисом."
+        data-weight="150 г"
+        data-calories="230 ккал"
+        data-price="510 ₽"
+        data-image="pictures/sushi1.png">
+        <img src="pictures/sushi1.png" alt="">
+        <h2>Scallop Nigiri</h2>
+        <p>Морской гребешок, рис</p>
+        <span class="price">510 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="California Roll"
+        data-jp="カリフォルニアロール"
+        data-desc="Классический ролл с крабом, авокадо, огурцом и икрой."
+        data-weight="270 г"
+        data-calories="430 ккал"
+        data-price="540 ₽"
+        data-image="pictures/sushi10.png">
+        <img src="pictures/sushi10.png" alt="">
+        <h2>California Roll</h2>
+        <p>Краб, авокадо, огурец</p>
+        <span class="price">540 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Tamago Nigiri"
+        data-jp="玉子握り"
+        data-desc="Нигири с японским омлетом тамаго, рисом и полоской нори."
+        data-weight="150 г"
+        data-calories="270 ккал"
+        data-price="390 ₽"
+        data-image="pictures/sushi4.png">
+        <img src="pictures/sushi4.png" alt="">
+        <h2>Tamago Nigiri</h2>
+        <p>Японский омлет, рис, нори</p>
+        <span class="price">390 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Avocado Roll"
+        data-jp="アボカドロール"
+        data-desc="Ролл с авокадо, креветкой и сладким фирменным соусом."
+        data-weight="270 г"
+        data-calories="400 ккал"
+        data-price="520 ₽"
+        data-image="pictures/sushi3.png">
+        <img src="pictures/sushi3.png" alt="">
+        <h2>Avocado Roll</h2>
+        <p>Авокадо, креветка, сладкий соус</p>
+        <span class="price">520 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Spicy Roll"
+        data-jp="スパイシーロール"
+        data-desc="Острый ролл с лососем, соусом спайси и кунжутом."
+        data-weight="280 г"
+        data-calories="460 ккал"
+        data-price="560 ₽"
+        data-image="pictures/sushi2.png">
+        <img src="pictures/sushi2.png" alt="">
+        <h2>Spicy Roll</h2>
+        <p>Острый лосось, соус, кунжут</p>
+        <span class="price">560 ₽</span>
+    </article>
+
+    <article class="catalog-card menu-product"
+        data-name="Salmon Set"
+        data-jp="サーモンセット"
+        data-desc="Сет для любителей лосося: Salmon Nigiri, Salmon Avocado Roll и Baked Salmon Roll. Подходит для одного-двух человек."
+        data-weight="720 г"
+        data-calories="1260 ккал"
+        data-price="1490 ₽"
+        data-image="pictures/set1.png">
+        <img src="pictures/set1.png" alt="">
+        <h2>Salmon Set</h2>
+        <p>Лосось, роллы, нигири</p>
+        <span class="price">1490 ₽</span>
+        </article>
+
+        <article class="catalog-card menu-product"
+        data-name="Tokyo Set"
+        data-jp="東京セット"
+        data-desc="Сытный сет с угрём, тунцом, креветкой и роллами. Хороший вариант для ужина вдвоём."
+        data-weight="850 г"
+        data-calories="1540 ккал"
+        data-price="1890 ₽"
+        data-image="pictures/set2.png">
+        <img src="pictures/set2.png" alt="">
+        <h2>Tokyo Set</h2>
+        <p>Угорь, тунец, креветка</p>
+        <span class="price">1890 ₽</span>
+        </article>
+
+        <article class="catalog-card menu-product"
+        data-name="Family Set"
+        data-jp="ファミリーセット"
+        data-desc="Большой семейный сет: несколько видов роллов, нигири, соусы, имбирь и васаби. Подходит для компании."
+        data-weight="1200 г"
+        data-calories="2300 ккал"
+        data-price="2490 ₽"
+        data-image="pictures/set3.png">
+        <img src="pictures/set3.png" alt="">
+        <h2>Family Set</h2>
+        <p>Роллы, нигири, соусы</p>
+        <span class="price">2490 ₽</span>
+        </article>
+
+        <article class="catalog-card menu-product"
+        data-name="Premium Set"
+        data-jp="プレミアムセット"
+        data-desc="Премиальный сет с лососем, морским гребешком, угрём и спайси роллом. Подходит для праздничного заказа."
+        data-weight="980 г"
+        data-calories="1880 ккал"
+        data-price="2190 ₽"
+        data-image="pictures/set4.png">
+        <img src="pictures/set4.png" alt="">
+        <h2>Premium Set</h2>
+        <p>Гребешок, угорь, лосось</p>
+        <span class="price">2190 ₽</span>
+        </article>
+    </section>
+
+    <div class="modal" id="product-modal">
+        <div class="modal-content product-modal-content">
+            <button class="modal-close" id="product-modal-close">×</button>
+
+            <img id="product-modal-image" class="product-modal-image" src="" alt="">
+
+            <h2 id="product-modal-name"></h2>
+            <p class="product-modal-jp" id="product-modal-jp"></p>
+            <p id="product-modal-desc"></p>
+
+            <div class="product-info-row">
+            <span id="product-modal-weight"></span>
+            <span id="product-modal-calories"></span>
+            <span id="product-modal-price"></span>
+            </div>
+
+            <a href="#" class="brown-link" id="product-order-link">Заказать</a>
+        </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <img src="pictures/footer.png" alt="" class="footer-wave">
+
+    <div class="footer-content">
+      <h2>Japanese</h2>
+      <p>Fresh sushi · Japanese taste · Warm atmosphere</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

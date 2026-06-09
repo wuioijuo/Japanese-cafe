@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Заказ — Japanese</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">ГЛАВНАЯ</a>
+
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="news.html">Новости</a>
+      <a href="catalog.html">Меню</a>
+      <a href="booking.html">Заказ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="inner-page">
+    <section class="page-title">
+      <h1>ORDER</h1>
+      <p>ご注文</p>
+    </section>
+<section class="form-section">
+      <h2>Форма заказа</h2>
+
+      <p class="delivery-note">
+        Доставка осуществляется в течение <strong>45-90 минут</strong> в зависимости от вашего района.
+      </p>
+
+      <form class="order-form" id="order-form">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <div class="order-products">
+            <label>
+                <span>Salmon Avocado Roll — 520 ₽</span>
+                <input type="checkbox" name="products" value="Salmon Avocado Roll">
+            </label>
+
+            <label>
+                <span>Tempura Roll — 560 ₽</span>
+                <input type="checkbox" name="products" value="Tempura Roll">
+            </label>
+
+            <label>
+                <span>Unagi Nigiri — 490 ₽</span>
+                <input type="checkbox" name="products" value="Unagi Nigiri">
+            </label>
+
+            <label>
+                <span>Tuna Nigiri — 450 ₽</span>
+                <input type="checkbox" name="products" value="Tuna Nigiri">
+            </label>
+
+            <label>
+                <span>Salmon Nigiri — 430 ₽</span>
+                <input type="checkbox" name="products" value="Salmon Nigiri">
+            </label>
+
+            <label>
+                <span>Baked Salmon Roll — 590 ₽</span>
+                <input type="checkbox" name="products" value="Baked Salmon Roll">
+            </label>
+
+            <label>
+                <span>Ebi Nigiri — 420 ₽</span>
+                <input type="checkbox" name="products" value="Ebi Nigiri">
+            </label>
+
+            <label>
+                <span>Scallop Nigiri — 510 ₽</span>
+                <input type="checkbox" name="products" value="Scallop Nigiri">
+            </label>
+
+            <label>
+                <span>California Roll — 540 ₽</span>
+                <input type="checkbox" name="products" value="California Roll">
+            </label>
+
+            <label>
+                <span>Tamago Nigiri — 390 ₽</span>
+                <input type="checkbox" name="products" value="Tamago Nigiri">
+            </label>
+
+            <label>
+                <span>Avocado Roll — 520 ₽</span>
+                <input type="checkbox" name="products" value="Avocado Roll">
+            </label>
+
+            <label>
+                <span>Spicy Roll — 560 ₽</span>
+                <input type="checkbox" name="products" value="Spicy Roll">
+            </label>
+
+            <label>
+                <span>Salmon Set — 1490 ₽</span>
+                <input type="checkbox" name="products" value="Salmon Set">
+            </label>
+
+            <label>
+                <span>Tokyo Set — 1890 ₽</span>
+                <input type="checkbox" name="products" value="Tokyo Set">
+            </label>
+
+            <label>
+                <span>Family Set — 2490 ₽</span>
+                <input type="checkbox" name="products" value="Family Set">
+            </label>
+
+            <label>
+                <span>Premium Set — 2190 ₽</span>
+                <input type="checkbox" name="products" value="Premium Set">
+            </label>
+        </div>
+
+        <select name="contact" required>
+          <option value="">Способ связи для подтверждения заказа</option>
+          <option value="Позвонить">Позвонить</option>
+          <option value="SMS">SMS</option>
+          <option value="Email">Email</option>
+        </select>
+
+        <select name="type" required>
+          <option value="">Тип заказа</option>
+          <option value="Доставка">Доставка</option>
+          <option value="Самовывоз">Самовывоз</option>
+        </select>
+
+        <input type="text" name="address" placeholder="Адрес доставки">
+
+        <input type="number" name="persons" placeholder="Количество персон" min="1" required>
+
+        <select name="payment" required>
+          <option value="">Способ оплаты</option>
+          <option value="Картой">Картой</option>
+          <option value="Наличными">Наличными</option>
+        </select>
+
+        <textarea name="comment" placeholder="Комментарий к заказу"></textarea>
+
+        <button type="submit">Отправить заказ</button>
+      </form>
+
+      <div class="form-result" id="form-result"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="pictures/footer.png" alt="" class="footer-wave">
+
+    <div class="footer-content">
+      <h2>Japanese</h2>
+      <p>Fresh sushi · Japanese taste · Warm atmosphere</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

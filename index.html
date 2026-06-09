@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Japanese</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">ГЛАВНАЯ</a>
+
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="news.html">Новости</a>
+      <a href="catalog.html">Меню</a>
+      <a href="booking.html">Заказ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <img class="hero-bg" src="pictures/blue-bg.png" alt="">
+
+      <img class="left-calligraphy" src="pictures/left_ieroglif.png" alt="">
+      <img class="logo-jp" src="pictures/ieroglif.png" alt="Japanese">
+
+      <div class="right-decoration-wrap">
+        <img class="right-decoration" src="pictures/balls.png" alt="">
+
+        <span class="ball-text ball-text-1">メイン</span>
+        <span class="ball-text ball-text-2">メニュー</span>
+        <span class="ball-text ball-text-3">株</span>
+      </div>
+
+      <h1>Japanese</h1>
+
+      <div class="hero-badge">
+      Experience the Taste of Japan
+      </div>
+
+      <p class="current-date" id="current-date"></p>
+
+      <img class="hero-plate" src="pictures/big_sushi.png" alt="Sushi plate">
+    </section>
+
+    <section class="slider-section">
+      <p class="small-section-title">おすすめ</p>
+      <h2 class="section-subtitle">Рекомендации дня</h2>
+      <p class="section-description">
+        Три блюда, с которых приятно начать знакомство с кухней Japanese.
+      </p>
+
+      <div class="slider">
+        <button class="slider-btn prev" id="prev-slide" type="button" aria-label="Предыдущий слайд"></button>
+
+        <div class="slide active">
+          <img src="pictures/sushi12.png" alt="Salmon Nigiri">
+          <div class="slide-text">
+            <span class="slide-kicker">Выбор шефа</span>
+            <h3>Salmon Nigiri</h3>
+            <p>Свежий лосось, мягкий рис и лёгкая нотка васаби.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="pictures/sushi6.png" alt="Tempura Roll">
+          <div class="slide-text">
+            <span class="slide-kicker">Хрустящий ролл</span>
+            <h3>Tempura Roll</h3>
+            <p>Креветка темпура, нежный рис и фирменный соус.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="pictures/sushi3.png" alt="Avocado Roll">
+          <div class="slide-text">
+            <span class="slide-kicker">Нежный вкус</span>
+            <h3>Avocado Roll</h3>
+            <p>Авокадо, креветка и мягкий сладкий соус.</p>
+          </div>
+        </div>
+
+        <button class="slider-btn next" id="next-slide" type="button" aria-label="Следующий слайд"></button>
+      </div>
+    </section>
+
+    <section class="home-actions">
+      <p class="small-section-title">日本の味</p>
+      <h2>Вкус Японии</h2>
+      <p class="section-description">
+        Попробуйте свежие роллы, нигири и фирменные сеты Japanese.
+        Полное меню доступно на отдельной странице.
+      </p>
+
+      <div class="home-actions-buttons">
+        <a href="catalog.html" class="brown-link">Смотреть меню</a>
+        <a href="booking.html" class="light-link">Оформить заказ</a>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <p class="small-section-title">私たちについて</p>
+      <h2>О кафе Japanese</h2>
+      <p class="section-description">
+        Japanese — это уютный японский ресторан с авторскими роллами,
+        свежими ингредиентами и спокойной восточной атмосферой.
+      </p>
+      <a href="contacts.html" class="brown-link">Наши контакты</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="pictures/footer.png" alt="" class="footer-wave">
+
+    <div class="footer-content">
+      <h2>Japanese</h2>
+      <p>Fresh sushi · Japanese taste · Warm atmosphere</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Контакты — Japanese</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">ГЛАВНАЯ</a>
+
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="news.html">Новости</a>
+      <a href="catalog.html">Меню</a>
+      <a href="booking.html">Заказ</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="inner-page">
+    <section class="page-title">
+      <h1>CONTACTS</h1>
+      <p>お問い合わせ</p>
+    </section>
+
+    <section class="contacts-grid">
+      <div class="contact-info">
+        <h2>Japanese</h2>
+
+        <p><strong>Адрес:</strong> г. Москва, Славянская площадь, 4с1</p>
+        <p><strong>Телефон:</strong> +7 987 655 43 21</p>
+        <p><strong>Email:</strong> japanese@gmail.com</p>
+
+        <section class="table-section">
+          <h2>График работы</h2>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>День</th>
+                  <th>Время работы</th>
+                  <th>Доставка</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Понедельник – Пятница</td>
+                  <td>10:00 – 22:00</td>
+                  <td>10:30 – 21:30</td>
+                </tr>
+
+                <tr>
+                  <td>Суббота</td>
+                  <td>11:00 – 23:00</td>
+                  <td>11:30 – 22:30</td>
+                </tr>
+
+                <tr>
+                  <td>Воскресенье</td>
+                  <td>11:00 – 22:00</td>
+                  <td>11:30 – 21:30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <button class="geo-button" id="geo-button">
+          Показать моё местоположение
+        </button>
+
+        <p class="geo-result" id="geo-result"></p>
+      </div>
+
+      <div class="yandex-map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A92b632dfbc7e9fa48d3f6df82e8fb09ef3a66135290d62e50a759fe49bac773a&amp;source=constructor" 
+          width="100%" 
+          height="420" 
+          frameborder="0">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="pictures/footer.png" alt="" class="footer-wave">
+
+    <div class="footer-content">
+      <h2>Japanese</h2>
+      <p>Fresh sushi · Japanese taste · Warm atmosphere</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
